@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    tools:showIn="nav_menu">
+
+    <item
+        android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_cuenta"
+                android:icon="@drawable/ic_edit"
+                android:title="@string/edit_account" />
+            <item
+                android:id="@+id/nav_premium"
+                android:icon="@drawable/ic_star"
+                android:title="@string/become_premium"/>
+        </menu>
+    </item>
+
+    <group>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_user"
+            android:title="@string/about_us"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_log_out"
+        android:icon="@drawable/ic_log_out"
+        android:title="@string/log_out"/>
+
+</menu>
